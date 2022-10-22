@@ -1,0 +1,19 @@
+<header>
+    <img src="./assets/Logo.svg" alt="interprise logo">
+    <ul>
+        <li>
+            <a [routerLink]="['']">Home</a>
+        </li>
+        <li>
+            <a [routerLink]="['about']">About</a>
+        </li>
+        <li>
+            <button type="button" (click)="toggle()" >
+                <img 
+                    src="./assets/{{icon}}.svg"
+                    alt="swith theme button to {{ textTheme }}">
+            </button>
+        </li>
+    </ul>
+
+</header>
